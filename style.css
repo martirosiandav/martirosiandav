@@ -8,31 +8,9 @@ html, body, h1, h2, h3, h4, h5, h6, p, span {
 }
 
 body {
-    /*background: #92c7d6;
-    background-image: -webkit-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
-    background-image: -moz-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
-    background-image: -o-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
-    background-image: radial-gradient(top, circle cover, #97d0e1, #427388 80%);*/
-
-    background: linear-gradient(
-    to bottom right,  
-    #2C3E50, #FD746C, 
-    #FF8235, #ffff1c, 
-    #92FE9D, #00C9FF, 
-    #a044ff, #e73827);
-    background-repeat: no-repeat;
-    background-size: 1000% 1000%;
-    animation: gradient 240s ease infinite;
-
-    /*background-color: #f1f1f1;*/
+    background-color: #f1f1f1;
     font-size: 15px;
     line-height: 1.5;
-}
-
-@keyframes gradient { 
-    0%{background-position:0% 0%}
-    50%{background-position:100% 100%}
-    100%{background-position:0% 0%}
 }
 
 div {
@@ -67,7 +45,7 @@ div {
     font-size: 20px;
 }
 
-#david {
+#david  {
     color: #009688;
     font-weight: 400;
     font-size: 40px;
@@ -87,15 +65,25 @@ div {
 #leftrows  {
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 3%;
-    margin-bottom: 3%;
     font-size: 20px;
 }
-
+.p1 , .icon , .article {
+    vertical-align: middle;
+}
+.icon {
+    position: relative;
+    margin-right: 3.5%;
+}
+p {
+    margin: 2.5% 0 2.5% 0;
+}
+#leftrows p:first-child{
+    margin-top: 0;
+}
 .skillbar {
     position:relative;
     display:block;
-    margin-bottom:25px;
+    margin-bottom:5%;
     width:100%;
     background:#eee;
     text-align: center;
@@ -143,15 +131,6 @@ div {
     color:#ffffff;
     color:rgba(0, 0, 0, 0.4);
 }
-
-.p1 , .icon , .article {
-    vertical-align: text-top;
-}
-.icon {
-    position: relative;
-    margin-right: 3.5%;
-}
-
 #right {
     color: #757575;
     background-color: #fff;
@@ -171,11 +150,6 @@ div {
     padding-left: 5%;
     padding-right: 5%;
 }
-
-p {
-    margin: 3% 0 3% 0;
-}
-
 #current {
     border-radius: 4px;
     background-color: #009688;
@@ -256,30 +230,36 @@ p {
     font-size: 27px;
     }
 }
-
-@media only screen and (max-width: 1090px) {
+@media only screen and (max-width: 1120px) {
     #container {
     margin-top: 1%;
     }
+    #right{
+        margin-left: 1%;
+        width: 49.5%;
+    }
     #left {
-    width: 41%;
+    width: 42%;
     margin-bottom: 1%;
     margin-left: 1%;
     }
     #david {
-        font-size: 35px;
+        font-size: 37px;
     }
     #leftrows {
-        font-size: 18px;
+        font-size: 19px;
     }
 }
 
 @media only screen and (max-width: 1050px) {
     #right {
-        width: 50%;
+        width: 49%;
+    }
+    #left{
+        width: 43%;
     }
     #david {
-        font-size: 35px;
+        font-size: 37px;
     }
     .vertical{
         margin-right: 5px;
@@ -306,38 +286,28 @@ p {
     }
 }
 
-@media only screen and (max-width: 920px) {
-    .article {
-        font-size: 16px;
+@media only screen and (max-width: 900px) {
+    #left {
+        width: 47%;
     }
-    #education {
-        font-size: 22px;
+    #right {
+        width: 50%;
     }
-    .globalsocial{
-        display: none;
-        /*margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 0;
-        transform: rotate(-90deg);
-        position: absolute;
-        width: 50px;
-        height: 225px;
-        left: 47.2%;
-        top: 942px;*/
+
+    #leftrows{
+        padding-left: 3.5%;
+        padding-right: 3.5%;
     }
-    .social{
-        margin: 0;
-        height: 235px;
+    #david{
+        font-size: 37px;
     }
-    .button{
-        padding: 7px 0px 7px 0px;
-        width: 48px;
-        height: 48px;
-        transform: rotate(90deg);
-    }
+    #right1{
+        padding-left: 3.5%;
+        padding-right: 3.5%;
+    } 
 }
 
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 830px) {
     #container{
         margin-top: 3%;
     }
@@ -348,13 +318,15 @@ p {
         margin-bottom: 3%;
     }
     #david {
-        font-size: 45px;
+        font-size: 50px;
     }
     #leftrows {
-        font-size: 20px;
+        font-size: 25px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .article {
-        font-size: 20px;
+        font-size: 25px;
     }
     #right {
         clear: both;
@@ -363,87 +335,122 @@ p {
         margin-right: 3%;
         margin-left: 3%;
     }
+    #right1{
+        font-size: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+    } 
     #education {
         font-size: 26px;
     }
+    .skillbar, .skillbar-title span,
+    .skillbar-bar, .skill-bar-percent {
+        height: 30px;
+    }
 }
+@media only screen and (max-width: 670px) {
+    #david {
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width: 580px) {
+    #container{
+        margin-top: 2%;
+    }
+    #left {
+        width: 96%;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+    #right {
+        width: 96%;
+        margin-bottom: 2%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    #leftrows {
+        font-size: 22px;
+    }
 
-@media only screen and (max-width: 520px) {
     #david {
         font-size: 40px;
     }
 }
-@media only screen and (max-width: 465px) {
+@media only screen and (max-width: 495px) {
     #david {
-        font-size: 35px;
+        font-size: 37px;
     }
     #leftrows {
+        font-size: 19px;
+    }
+    .article {
+        font-size: 22px;
+    }
+    #education {
+        font-size: 22px;
+    }
+    #right1 {
+        font-size: 17px;
+    }
+    .skillbar, .skillbar-title span,
+    .skillbar-bar, .skill-bar-percent {
+        height: 24px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #david {
+        font-size: 32px;
+    }
+    #leftrows  {
+        padding-left: 3%;
+        padding-right: 3%;
         font-size: 17px;
     }
     .article {
         font-size: 18px;
     }
     #education {
-        font-size: 22px;
-    }
-    #right {
-        font-size: 17px;
-    }
-}
-
-@media only screen and (max-width: 395px) {
-    #leftrows  {
-    padding-left: 2%;
-    padding-right: 2%;
-    }
-    #right {
-        font-size: 16px;
-    }
-    #leftrows {
-        font-size: 16px;
-    }
-    #david {
-        font-size: 30px;
-    }
-    .article {
-        font-size: 17px;
-    }
-    #education {
         font-size: 21px;
     }
-    .bar {
-        font-size:13px;
-    }
 }
 
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 370px) {
+    #container {
+        margin-top: 0;
+    }
+    #leftrows  {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
     #right {
-        width: 98%;
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-bottom: 1%;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
         font-size: 15px;
     }
     #left {
-        width: 98%;
-        margin-left: 1%;
-        margin-right: 1%;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
         margin-bottom: 1%;
     }
-    #leftrows {
-        font-size: 15px;
-    }
-    #container {
-        margin-top: 1%;
-    }
     #david {
-        font-size: 25px;
+        font-size: 28px;
     }
     .article {
         font-size: 16px;
     }
     #education {
-        font-size: 20px;
+        font-size: 19px;
+    }
+    .icon {
+        margin-right: 2%;
+}
+@media only screen and (max-width: 340px) {
+    #leftrows  {
+        font-size: 15px;
     }
 }
-
