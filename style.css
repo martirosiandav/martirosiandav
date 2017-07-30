@@ -121,7 +121,7 @@ p {
     -moz-border-radius:8px;
 }
 
-.skill-bar-percent {
+.skillbar-percent {
     position:absolute;
     right:10px;
     top:0;
@@ -344,7 +344,7 @@ p {
         font-size: 26px;
     }
     .skillbar, .skillbar-title span,
-    .skillbar-bar, .skill-bar-percent {
+    .skillbar-bar, .skillbar-percent {
         height: 30px;
     }
 }
@@ -394,7 +394,7 @@ p {
         font-size: 17px;
     }
     .skillbar, .skillbar-title span,
-    .skillbar-bar, .skill-bar-percent {
+    .skillbar-bar, .skillbar-percent {
         height: 24px;
     }
 }
