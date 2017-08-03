@@ -37,6 +37,7 @@ div {
     transition: .3s ease-in-out;
 }
 #image figure:hover img {
+    cursor: pointer;
     opacity: .5;
     filter: blur(0.5px);
 }
