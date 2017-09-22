@@ -421,10 +421,12 @@ p {
     #container {
         margin-top: 0;
     }
-    #leftrows  {
+
+    #leftrows {
         padding-left: 2%;
         padding-right: 2%;
     }
+
     #right {
         width: 100%;
         margin-left: 0;
@@ -432,26 +434,32 @@ p {
         margin-bottom: 0;
         font-size: 15px;
     }
+
     #left {
         width: 100%;
         margin-left: 0%;
         margin-right: 0%;
         margin-bottom: 1%;
     }
+
     #david {
         font-size: 28px;
     }
+
     .article {
         font-size: 16px;
     }
+
     #education {
         font-size: 19px;
     }
+
     .icon {
         margin-right: 2%;
-}
-@media only screen and (max-width: 340px) {
-    #leftrows  {
-        font-size: 15px;
     }
 }
+    @media only screen and (max-width: 340px) {
+        #leftrows {
+            font-size: 15px;
+        }
+    }
