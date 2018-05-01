@@ -33,13 +33,13 @@ div {
 #image figure img {
     opacity: 1;
     -webkit-transition: .3s ease-in-out;
-    -moz-transition:.3s ease-in-out;
     transition: .3s ease-in-out;
 }
 #image figure:hover img {
     cursor: pointer;
     opacity: .5;
-    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);
+            filter: blur(0.5px);
 }
 .article {
     color: #009688;
@@ -58,7 +58,8 @@ div {
     background-color: #fff;
     float: left;
     color: #757575;
-    box-shadow: 0 4px 10px 0;
+    -webkit-box-shadow: 0 4px 10px 0;
+            box-shadow: 0 4px 10px 0;
     margin-bottom: 1.5%;
     margin-left: 1.5%;
 }
@@ -138,7 +139,8 @@ p {
     width: 40%;
     float: left;
     margin-left: 1.5%;
-    box-shadow: 0 4px 10px 0;
+    -webkit-box-shadow: 0 4px 10px 0;
+            box-shadow: 0 4px 10px 0;
     font-size: 17px;
 }
 
@@ -215,7 +217,7 @@ p {
     #right {
         width: 42%;
     }
-}  
+}
 
 @media only screen and (max-width: 1270px) {
     #right {
@@ -305,7 +307,7 @@ p {
     #right1{
         padding-left: 3.5%;
         padding-right: 3.5%;
-    } 
+    }
 }
 
 @media only screen and (max-width: 830px) {
@@ -340,7 +342,7 @@ p {
         font-size: 20px;
         padding-left: 5%;
         padding-right: 5%;
-    } 
+    }
     #education {
         font-size: 26px;
     }
